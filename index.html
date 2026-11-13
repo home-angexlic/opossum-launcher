@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#19181f">
+  <meta name="description" content="Opossum Launcher is a native Minecraft Java launcher for Linux. Manage instances, mod loaders, mods and Java settings. Public release coming soon.">
+  <title>Opossum Launcher — Minecraft Java for Linux</title>
+  <link rel="icon" type="image/webp" href="assets/opossum.webp">
+  <link rel="stylesheet" href="assets/common.css?v=2">
+  <link rel="stylesheet" href="assets/night-v2.css">
+  <script>document.documentElement.classList.add('js');setTimeout(()=>document.documentElement.classList.add('is-loaded'),1200);</script>
+  <script src="assets/common.js?v=3" defer></script>
+  <script src="assets/night-preview.js" defer></script>
+</head>
+<body class="theme-night-v2">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="boot-screen" aria-hidden="true">
+    <img src="assets/opossum.webp" alt="" width="90" height="90">
+    <div class="boot-label">Loading Opossum</div>
+    <div class="boot-bar"><i></i></div>
+  </div>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html" aria-label="Opossum Launcher home">
+      <img src="assets/opossum.webp" alt="" width="40" height="40">
+      <span class="brand-name">opossum<small>LAUNCHER</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#status">Status</a>
+    </nav>
+    <div class="nav-right">
+      <span class="status-chip nav-status"><i class="status-dot" aria-hidden="true"></i>Coming soon</span>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <section class="landing-hero" aria-labelledby="hero-title">
+      <div class="hero-pixels" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow">MINECRAFT JAVA EDITION · LINUX</div>
+        <h1 id="hero-title">Opossum<br><span>Launcher.</span></h1>
+        <p class="hero-description">Manage your Minecraft instances, mod loaders and content in one native Linux app.</p>
+        <div class="hero-release"><i class="status-dot" aria-hidden="true"></i>Coming soon · Public release in preparation</div>
+        <div class="button-row">
+          <a class="pixel-button primary" href="#features">Explore features <span class="arrow" aria-hidden="true">↓</span></a>
+          <a class="quiet-link" href="#status">View release status ↗</a>
+        </div>
+      </div>
+
+      <figure class="product-preview reveal" aria-labelledby="preview-caption">
+        <div class="preview-frame">
+          <div class="preview-bar">
+            <div class="preview-brand"><img src="assets/opossum.webp" alt="" width="22" height="22">Opossum Launcher</div>
+            <div class="preview-window-meta"><span>UI concept</span><span class="preview-controls" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          </div>
+          <div class="preview-body" data-tabs>
+            <div class="preview-nav" role="tablist" aria-label="Launcher preview sections" aria-orientation="vertical">
+              <button type="button" role="tab" id="preview-tab-library" aria-controls="preview-library" aria-selected="true" tabindex="0">
+                <svg class="pixel-icon" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges" aria-hidden="true"><path d="M3 3h7v7H3zm11 0h7v7h-7zM3 14h7v7H3zm11 0h7v7h-7z"/></svg>Library
+              </button>
+              <button type="button" role="tab" id="preview-tab-content" aria-controls="preview-content" aria-selected="false" tabindex="-1">
+                <svg class="pixel-icon" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges" aria-hidden="true"><path d="M4 3h5v5H4zm11 0h5v5h-5zM9 9h6v3h3v3h3v6H3v-6h3v-3h3z"/></svg>Content
+              </button>
+              <button type="button" role="tab" id="preview-tab-java" aria-controls="preview-java" aria-selected="false" tabindex="-1">
+                <svg class="pixel-icon" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges" aria-hidden="true"><path d="M7 2h3v6H7zm7 0h3v6h-3zM3 10h15v2h4v8h-6v2H5v-2H3zm15 4v4h2v-4z"/></svg>Java
+              </button>
+            </div>
+            <section class="preview-main" id="preview-library" role="tabpanel" aria-labelledby="preview-tab-library">
+              <h2>Your instances</h2>
+              <p class="preview-panel-note">Choose an example to preview its setup.</p>
+              <div class="instance-grid" role="group" aria-label="Example instances">
+                <button class="instance-tile" type="button" data-preview-instance="Survival" data-loader="Vanilla" data-version="1.21.1" aria-pressed="true">
+                  <span class="tile-sprite" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges"><path d="M3 3h18v18H3z" fill="#9d6b85"/><path d="M3 3h18v5H3z" fill="#e5afc7"/><path d="M6 12h3v3H6zm8 4h3v2h-3z" fill="#c994ae"/></svg></span>
+                  <span class="tile-name">Survival</span><span class="tile-loader">Vanilla</span><span class="tile-version">1.21.1</span>
+                </button>
+                <button class="instance-tile" type="button" data-preview-instance="Fabric setup" data-loader="Fabric" data-version="1.21.1" aria-pressed="false">
+                  <span class="tile-sprite" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges"><path d="M8 2h8v3h3v3h3v8h-3v3h-3v3H8v-3H5v-3H2V8h3V5h3z" fill="#ad91ad"/><path d="M9 6h6v3h3v6h-3v3H9v-3H6V9h3z" fill="#ded0df"/><path d="M10 9h4v6h-4z" fill="#988199"/></svg></span>
+                  <span class="tile-name">Fabric setup</span><span class="tile-loader">Fabric</span><span class="tile-version">1.21.1</span>
+                </button>
+                <button class="instance-tile" type="button" data-preview-instance="NeoForge setup" data-loader="NeoForge" data-version="1.21.1" aria-pressed="false">
+                  <span class="tile-sprite" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges"><path d="M3 4h18v17H3z" fill="#9e758e"/><path d="M4 5h16v5H4z" fill="#d9b5cb"/><path d="M3 11h18v2H3z" fill="#3e2c44"/><path d="M10 9h4v6h-4z" fill="#f2c7d9"/></svg></span>
+                  <span class="tile-name">NeoForge setup</span><span class="tile-loader">NeoForge</span><span class="tile-version">1.21.1</span>
+                </button>
+              </div>
+            </section>
+            <section class="preview-main" id="preview-content" role="tabpanel" aria-labelledby="preview-tab-content" hidden>
+              <h2>Instance content</h2>
+              <p class="preview-panel-note">Keep content inside its own game folder.</p>
+              <div class="preview-content-list">
+                <div class="preview-content-item"><svg class="pixel-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3h7v7H3zm11 0h7v7h-7zM3 14h7v7H3zm11 0h7v7h-7z"/></svg><div><strong>Mods</strong><small>Browse Modrinth or add local files.</small></div></div>
+                <div class="preview-content-item"><svg class="pixel-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 4h18v7h-7V9h-4v2H3zm0 9h7v3h4v-3h7v8H3z"/></svg><div><strong>Resource packs & shaders</strong><small>Separate content for each instance.</small></div></div>
+                <div class="preview-content-item"><svg class="pixel-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 3h16v4H4zM2 8h20v13H2zm8 2v3H7v2h3v3h4v-3h3v-2h-3v-3z"/></svg><div><strong>Pack imports</strong><small>Import CurseForge ZIPs or extracted folders.</small></div></div>
+              </div>
+            </section>
+            <section class="preview-main" id="preview-java" role="tabpanel" aria-labelledby="preview-tab-java" hidden>
+              <h2>Java & memory</h2>
+              <p class="preview-panel-note">Example settings for <span data-current-instance>Survival</span>.</p>
+              <dl class="preview-settings">
+                <div class="preview-setting"><dt>Java runtime</dt><dd>Automatic</dd></div>
+                <div class="preview-setting"><dt>Memory limit</dt><dd>4 GiB</dd></div>
+                <div class="preview-setting"><dt>Mod loader</dt><dd data-current-loader>Vanilla</dd></div>
+                <div class="preview-setting"><dt>Minecraft version</dt><dd data-current-version>1.21.1</dd></div>
+              </dl>
+            </section>
+          </div>
+          <div class="preview-selection">
+            <div class="selection-main"><i class="selection-marker" aria-hidden="true"></i><div><strong data-current-instance>Survival</strong><small>Minecraft <span data-current-version>1.21.1</span> · <span data-current-loader>Vanilla</span></small></div></div>
+            <span class="selection-meta">4 GiB · Java auto</span>
+          </div>
+          <span class="preview-announcement" data-preview-status role="status" aria-live="polite">Selected example: Survival, Minecraft 1.21.1, Vanilla.</span>
+        </div>
+        <figcaption id="preview-caption">Interactive interface concept. Example instances, not a screenshot.</figcaption>
+      </figure>
+    </section>
+
+    <div class="loader-strip reveal" aria-label="Supported mod loaders">
+      <span>Supported loaders</span>
+      <div class="loader-names"><span>Vanilla</span><span>Fabric</span><span>Quilt</span><span>Forge</span><span>NeoForge</span></div>
+    </div>
+
+    <section class="features-section" id="features" aria-labelledby="features-title">
+      <div class="section-top reveal"><div><div class="eyebrow">ALREADY IN DEVELOPMENT BUILDS</div><h2 class="section-heading" id="features-title">What the launcher does</h2></div><p>The current project includes instance management, content tools and per-instance settings.</p></div>
+      <div class="feature-grid">
+        <article class="feature-item reveal"><svg class="pixel-icon" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges" aria-hidden="true"><path d="M3 3h7v7H3zm11 0h7v7h-7zM3 14h7v7H3zm11 0h7v7h-7z"/></svg><div><h3>Separate instances</h3><p>Keep worlds, mods and settings in separate game folders. Import and export your setups.</p></div></article>
+        <article class="feature-item reveal"><svg class="pixel-icon" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges" aria-hidden="true"><path d="M5 2h14v3h2v16H5v-2H3V5h2zm2 5v2h10V7zm0 5v2h8v-2zm0 5v2h10v-2z"/></svg><div><h3>Versions & loaders</h3><p>Choose an exact Minecraft or loader version. Use Vanilla, Fabric, Quilt, Forge or NeoForge.</p></div></article>
+        <article class="feature-item reveal"><svg class="pixel-icon" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges" aria-hidden="true"><path d="M4 3h5v5H4zm11 0h5v5h-5zM9 9h6v3h3v3h3v6H3v-6h3v-3h3z"/></svg><div><h3>Mods, packs & shaders</h3><p>Browse Modrinth, add local content, or import a CurseForge pack from a ZIP or folder.</p></div></article>
+        <article class="feature-item reveal"><svg class="pixel-icon" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges" aria-hidden="true"><path d="M7 2h3v6H7zm7 0h3v6h-3zM3 10h15v2h4v8h-6v2H5v-2H3zm15 4v4h2v-4z"/></svg><div><h3>Java, RAM & logs</h3><p>Set a Java runtime and RAM limits per instance. Open logs and game files from the same place.</p></div></article>
+      </div>
+    </section>
+
+    <section class="project-status" id="status" aria-labelledby="status-title">
+      <div class="section-top reveal"><div><div class="eyebrow">COMING SOON</div><h2 class="section-heading" id="status-title">Before the public release</h2></div><p>Public downloads will be linked here when the release is ready. No release date has been announced.</p></div>
+      <div class="status-grid">
+        <article class="status-card reveal"><div class="status-card-header"><h3>Microsoft sign-in</h3><span class="status-label">Pending approval</span></div><p>Microsoft sign-in is in preparation and requires approval for Minecraft API access. It is not ready for public use.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer wrap">
+    <div><span class="footer-name">Opossum Launcher</span><div class="footer-description">Minecraft Java launcher for Linux.</div><div class="footer-note">Independent project. Not affiliated with Mojang or Microsoft.</div></div>
+    <nav class="footer-links" aria-label="Footer navigation"><a href="#features">Features</a><a href="#main">Back to top ↑</a></nav>
+  </footer>
+  <div class="toast" data-toast-region role="status" aria-live="polite" hidden></div>
+</body>
+</html>
